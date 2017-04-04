@@ -6,6 +6,7 @@
 package Ej2;
 
 import java.util.ArrayList;
+import java.util.Date;
 
 /**
  *
@@ -14,17 +15,16 @@ import java.util.ArrayList;
 public class Cuenta {
     private int numeroCuenta;
     private double saldo;
-    private String dateCreation;
+    private Date dateCreation;
     private String nomCliente;
     private Movimiento movimiento;
     ArrayList <Movimiento> cantMovimientos = new ArrayList <Movimiento>();
 
-    public Cuenta(int numeroCuenta, double saldo, String dateCreation, String nomCliente) {
+    public Cuenta(int numeroCuenta, double saldo, Date dateCreation, String nomCliente) {
         this.numeroCuenta = numeroCuenta;
         this.saldo = saldo;
         this.dateCreation = dateCreation;
-        this.nomCliente = nomCliente;
-        
+        this.nomCliente = nomCliente;   
     }
     
     
